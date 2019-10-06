@@ -1,0 +1,25 @@
+$te-al: center;
+
+@mixin secciones($fh, $bg-c) {
+    width: 100%; 
+    height: $fh;
+    background-color: $bg-c;
+}
+
+.header {
+    @include secciones(200px, rgb(161, 15, 137));  
+}
+.main {
+    @include secciones(400px, orange); 
+}
+.footer {
+    @include secciones(150px, rgb(89, 173, 89));
+}
+.titulo {
+    font-size: 3.5em;
+    text-align: $te-al;
+}
+p {
+    color: white;
+    text-align: $te-al;
+}
